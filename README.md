@@ -1,5 +1,7 @@
 # TestSprite Hackathon — Season 4 landing page
 
+![Season 4 share card: Two Weeks. One Loop.](og-image.jpg)
+
 Static, single-file landing page for Hackathon Season 4. No framework, no build step required: `index.html` plus a handful of image assets.
 
 ## Files
@@ -10,8 +12,11 @@ Static, single-file landing page for Hackathon Season 4. No framework, no build 
 | `painting.jpg` | Impressionist background used on the hero, CLI, timeline, and closing panels |
 | `testsprite-logo.png` | Nav logo (rendered black via CSS filter) |
 | `wordmark-outline.png` | Faint outlined wordmark under the footer |
+| `og-image.jpg` | 1200×630 share card shown when the live URL is posted on Slack, Discord, X, etc. (referenced from `<meta property="og:image">`) |
+| `favicon-32.png`, `favicon-512.png`, `apple-touch-icon.png` | Browser tab and home-screen icons |
 | `events/` | Past-event posters (3) |
 | `icons/` | Agent logos used in the LOOP.md card |
+| `LICENSE` | © TestSprite, all rights reserved |
 
 ## Run locally
 
@@ -35,9 +40,11 @@ The page is static. Any of these work:
 - **Countdown target** — one line near the bottom of `index.html`:
   `var target = new Date("2026-09-14T09:00:00-07:00").getTime();`
 - **Hero status chip** text ("Season 4 · Opens Sept 14 · $4,000 in prizes") once entries open.
-- **Discord invite** — points to the real invite; swap in a dedicated feedback channel if one is created.
+- **`og:url`** in the `<head>` is set to `https://www.testsprite.com/hackathon`; change it if the page lives at a different path.
 - **Brand marks** — the Discord and X buttons use generic icons; official SVGs can be pasted into the `<svg class="ico">` slots.
 - **Fonts** load from Fontshare (Satoshi) and Google Fonts (Geist Mono, Source Serif 4). Self-host if the site's CSP requires it.
+
+The Discord invite (`discord.com/invite/GXWFjCe4an`) and X handle (`@test_sprite`) are final.
 
 ## Source of truth
 
