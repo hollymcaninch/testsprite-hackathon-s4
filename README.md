@@ -35,7 +35,7 @@ The page is static. Any of these work:
 - **Countdown target** — one line near the bottom of `index.html`:
   `var target = new Date("2026-09-14T09:00:00-07:00").getTime();`
 - **Hero status chip** text ("Season 4 · Opens Sept 14 · $4,000 in prizes") once entries open.
-- **Discord invite** — currently `https://discord.gg/testsprite` throughout; swap for the real invite / feedback channel.
+- **Discord invite** — points to the real invite; swap in a dedicated feedback channel if one is created.
 - **Brand marks** — the Discord and X buttons use generic icons; official SVGs can be pasted into the `<svg class="ico">` slots.
 - **Fonts** load from Fontshare (Satoshi) and Google Fonts (Geist Mono, Source Serif 4). Self-host if the site's CSP requires it.
 
